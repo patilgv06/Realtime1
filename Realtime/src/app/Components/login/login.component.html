@@ -1,0 +1,39 @@
+<p>login works!</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <img src="https://cdn.pixabay.com/photo/2021/09/08/05/39/communication-6605648__340.jpg" alt="">
+
+    <form [formGroup]="addloanTypeForm">
+        <label for="Loanname">Loanname</label>
+        <input type="text" fromControlName="loanname"><br>
+
+        <label for="lastname">lastname</label>
+        <input type="text" fromControlName="loanname"><br>
+        <label for="gamil">gmail</label>
+        <input type="text" fromControlName="loanname"><br>
+        <label for="Loanname">Loanname</label>
+        <input type="text" fromControlName="loanname"><br>
+        <label for="Loanname">Loanname</label>
+        <input type="text" fromControlName="loanname"><br>
+       
+        <br>
+        <br>
+        <label for="textarea">Textarea</label>
+        <textarea fromControlName="loandescription" id="" cols="30" rows="10"></textarea>
+        <button (click)="addloanType()">Add Loan Type</button>
+
+    </form>
+    
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sidebae Template </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+</head>
+
+<body>
+  <input type="checkbox" id="check">
+  <header>
+    <label for="check">
+      <i class="fas fa-bars" id="sidebar_btn"></i>
+    </label>
+
+    <div class="right_area">
+      <a routerLink="/signup" routerLinkActive="active" class="login_btn">Signup</a>
+      <a routerLink="/login" routerLinkActive="active" class="signup_btn">Login </a>
+
+    </div>
+  </header>
+  <div class="sidebar">
+
+
+    <ul>
+      <li>
+
+
+
+        <a routerLink="/dashboard" routerLinkActive="active"><i class="fas fa-desktop"></i><span>Dashboard</span></a>
+        <a routerLink="/component" routerLinkActive="active"><i class="fas fa-cogs"></i><span>Components</span></a>
+        <a routerLink="tables" routerLinkActive="active"><i class="fas fa-table"></i><span>Tables</span></a>
+        <a routerLink="/forms" routerLinkActive="active"><i class="fas fa-th"></i><span>Forms</span></a>
+        <a routerLink="/about"  [queryParams]="{ type: 'Old'}" routerLinkActive="active"><i class="fas fa-info-circle"></i><span>About 1</span></a>
+        <a routerLink="/about" routerLinkActive="active"><i class="fas fa-sliders-h"></i><span>About 2</span></a>
+      </li>
+    </ul>
+
+  </div>
+  <div class="content">
+    <img src="" alt="">
+  </div>
+
+  <router-outlet></router-outlet>
+
+</body>
+
+</html>

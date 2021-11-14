@@ -1,0 +1,13 @@
+div img{
+    background:center;
+    background-position: center;
+    background-size: cover;
+    margin-left: 284px;
+    margin-top: 35px;
+    height: 100%;
+    transition: 0.5s;
+    width: 84%;
+    transition-property:background ;
+
+
+}

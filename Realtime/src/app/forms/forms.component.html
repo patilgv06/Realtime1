@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+
+        <div class="main">
+            
+            <div class="main1">
+                <form #loginForm="ngForm" (submit)="addlogin(loginForm)">
+                    
+                    <label for="firstname">Firstname</label><div class="size">
+                        <input type="text" [(ngModel)]="firstname" name="firstname" required>
+                    </div>
+                    <label for="lastname">Lastname</label>
+                    <div class="size">
+                        <input type="text" [(ngModel)]="lastname" name="lastname" required>
+                    </div>
+                    
+                    
+                    <label for="gmail">gmail</label>
+                    <div class="size">
+
+                        <input type="gmail" [(ngModel)]="gmail" name="gmail" required minlength="8">
+                    </div>
+                    
+                    
+                    <label for="password">Password</label>
+                    <div class="size">
+                        <input type="password" [(ngModel)]="password" name="password" required>
+                    </div>
+                    <label class="size1" for="country">Country</label>
+                    <div class="size">
+                        <select [(ngModel)]="country" name="country">
+                            <option value="1">India</option>
+                            <option value="2">USA</option>
+                            <option value="3">England</option>
+                            <option value="4">France</option>
+                        </select>
+                    </div>
+                    <button type="submit" [disabled]="!loginForm.valid">LoginCustomer</button>
+                    <button type="reset" class="btn btn-link" (click)="resetForm(loginForm)">ResetLogin</button>
+                </form>
+            </div>
+        </div>
+        
+        
+    </main>
+    </body>
+
+</html>
